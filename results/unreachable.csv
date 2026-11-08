@@ -1,0 +1,7 @@
+algorithm,correctly_reported_no_path_pct,mean_expanded,mean_time_ms
+BFS (reference),100.0,3832.125,16.91878107996672
+Bidirectional BFS,100.0,2.13,0.007877914981690992
+A* (no heuristic),100.0,3832.125,27.513063610012978
+A* (landmarks),100.0,3832.14,45.01260801997432
+"A* (category, w=1)",100.0,3832.125,32.87796033000632
+"A* (category, w=2)",100.0,3841.26,41.88435052001296

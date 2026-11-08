@@ -1,0 +1,13 @@
+from → to,shortest,algorithm,clicks,path
+Banjul → England,2,Bidirectional BFS,2,Banjul → United_Kingdom → England
+Banjul → England,2,A* (landmarks),2,Banjul → United_Kingdom → England
+Banjul → England,2,"A* (category, w=2)",2,Banjul → United_Kingdom → England
+Tropical_cyclone → Richard_III_of_England,3,Bidirectional BFS,3,Tropical_cyclone → Cape_Verde → 15th_century → Richard_III_of_England
+Tropical_cyclone → Richard_III_of_England,3,A* (landmarks),3,Tropical_cyclone → English_language → 15th_century → Richard_III_of_England
+Tropical_cyclone → Richard_III_of_England,3,"A* (category, w=2)",3,Tropical_cyclone → World_War_II → British_Empire → Richard_III_of_England
+Silicon → George_VI_of_the_United_Kingdom,4,Bidirectional BFS,4,Silicon → Aluminium → Australia → Elizabeth_II_of_the_United_Kingdom → George_VI_of_the_United_Kingdom
+Silicon → George_VI_of_the_United_Kingdom,4,A* (landmarks),4,Silicon → Antoine_Lavoisier → Law → British_monarchy → George_VI_of_the_United_Kingdom
+Silicon → George_VI_of_the_United_Kingdom,4,"A* (category, w=2)",4,Silicon → World_War_II → Winston_Churchill → Edward_VIII_of_the_United_Kingdom → George_VI_of_the_United_Kingdom
+Linux → Double-decker_bus,5,Bidirectional BFS,5,Linux → C++ → Library → 19th_century → London_Underground → Double-decker_bus
+Linux → Double-decker_bus,5,A* (landmarks),5,Linux → Richard_Stallman → Winston_Churchill → William_Ewart_Gladstone → London_Underground → Double-decker_bus
+Linux → Double-decker_bus,5,"A* (category, w=2)",5,Linux → Richard_Stallman → Automobile → MINI_(BMW) → Mini → Double-decker_bus
