@@ -37,18 +37,20 @@ The results below are from a run on Google Colab. Times will vary on other machi
 
 | Algorithm | Accuracy | Nodes expanded | Peak memory | Mean time |
 |---|---:|---:|---:|---:|
-| Bidirectional BFS | 100% | 4.8 | 8 KiB | 0.030 ms |
-| BFS (reference) | 100% | 305 | 96 KiB | 1.684 ms |
-| A* (category, w=2) | 81.3% | 136 | 135 KiB | 3.340 ms |
-| A* (category, w=1) | 100% | 296 | 201 KiB | 5.657 ms |
-| A* (landmarks) | 100% | 90 | 97 KiB | 5.797 ms |
-| A* (no heuristic) | 100% | 1,558 | 345 KiB | 16.795 ms |
+| Bidirectional BFS | 100% | 4.8 | 8 KiB | 0.050 ms |
+| BFS (reference) | 100% | 305 | 96 KiB | 1.561 ms |
+| A* (category, w=2) | 81.3% | 136 | 135 KiB | 3.192 ms |
+| A* (landmarks) | 100% | 90 | 97 KiB | 5.658 ms |
+| A* (category, w=1) | 100% | 296 | 201 KiB | 5.775 ms |
+| A* (no heuristic) | 100% | 1,558 | 345 KiB | 16.340 ms |
 
-Accuracy is the percentage of test pairs where a valid path of the true shortest length was found. The landmark heuristic also needs about 0.7 s of setup before searching. All algorithms correctly reported "no path" for 200 unreachable pairs.
+Accuracy is the percentage of test pairs where a valid path of the true shortest length was found. The landmark heuristic also needs about 0.5 s of setup before searching. All algorithms correctly reported "no path" for 200 unreachable pairs. The full notebook took about 6 minutes to run on Colab, of which the final experiment took about 5.4 minutes.
 
 ![Runtime and nodes expanded for each algorithm](results/figures/fig4_algorithm_overview.png)
 
 ![Nodes expanded by path length](results/figures/fig2_nodes_expanded_by_distance.png)
+
+![Human players compared with the shortest path](results/figures/fig6_human_vs_shortest.png)
 
 ## Findings
 
@@ -60,7 +62,7 @@ Accuracy is the percentage of test pairs where a valid path of the true shortest
 
 ## How to Run
 
-The simplest option is to open `notebooks/AI_Project.ipynb` in Google Colab and select **Runtime → Run all**. A full run takes a few minutes.
+The simplest option is to open `notebooks/AI_Project.ipynb` in Google Colab and select **Runtime → Run all**. A full run takes about 6 minutes.
 
 To run it locally (Python 3.12 or newer):
 
